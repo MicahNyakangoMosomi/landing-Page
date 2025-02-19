@@ -7,16 +7,22 @@
   --c-dark:#212529;
   --c-brand:#4657d4;
   --c-brand-light:#6970dd;
+  --c-brand-rgb:78,87,212;
   --c-body:#727272;
-  --font-base: "molongo",serif;
-  --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+  --font-base: "Roboto", serif;
+  --box-shadow: 0px 15px 25px rgba(var(--c-brand-rgba),0.08);
   --transition:all 0.5s ease;
 
+}
+body{
+  color: var(--c-body);
+  font-family: var(--c-body);
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
+  color: var(--c-dark);
 }
 
 a{
@@ -70,4 +76,25 @@ img{
 .btn-brand:hover{
   background-color: var(--c-brand-light);
   color: white;
+}
+
+/* HERO */
+
+.hero{
+  background: linear-gradient(rgba(var(--c-brand-rgb),0.507),rgba(var(--c-brand-rgb),0.438)),url(../images/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* SECTION-TITLE */
+.section-title{
+  margin-bottom: 40px;
+}
+
+.section-title .line{
+  width: 60px;
+  height: 4px;
+  background-color: var(--c-brand);
+  margin: 16px auto 24px auto;
 }
