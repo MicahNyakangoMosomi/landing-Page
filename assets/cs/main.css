@@ -98,3 +98,21 @@ img{
   background-color: var(--c-brand);
   margin: 16px auto 24px auto;
 }
+
+.section-title p{
+  max-width: 500px;
+}
+
+
+/* ICONBOX */
+.iconbox{
+  width: 60px;
+  height: 60px;
+  display:inline-flex ;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(var(--c-brand-rgb),0.507),rgba(var(--c-brand-rgb),0.438));
+  color: var(--c-brand);
+  font-size: 34px;
+  flex: none;
+}
