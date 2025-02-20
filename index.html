@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>landing page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+  />
+
   <link rel="stylesheet" href="/assets/cs/main.css">
 
   <!-- fonts -->
@@ -93,7 +99,7 @@
         <div class="row">
           <div class="col-12 text-center">
             <div class="section-title">
-              <h1 class="text-white display-4" class="display-4">About Us</h1>
+              <h1 class="display-4">About Us</h1>
               <div class="line">
                 <!-- line -->
               </div>
@@ -160,15 +166,18 @@
     <!-- Service section -->
     <section id="service" class="section-padding border-top">
       <div class="container">
-        <div class="col-12 text-center">
-          <div class="section-title">
-            <h1 class="text-white display-4" class="display-4">Services</h1>
-            <div class="line">
-              <!-- line -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4">Services</h1>
+              <div class="line">
+                <!-- line -->
+              </div>
+              <p class="mx-auto">We offer savings, loans, and investment solutions designed to support financial growth and stability.</p>
             </div>
-            <p class="mx-auto">We offer savings, loans, and investment solutions designed to support financial growth and stability.</p>
           </div>
         </div>
+        
         <div class="row text-center">
           <!-- service-box 1 -->
           <div class="col-lg-4 col-sm-6">
@@ -269,9 +278,79 @@
       </div>
       
     </section>
-     <!-- end counter section -->
+    <!-- end counter section -->
+
+    <!-- news and updates section -->
+    <section id="news" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4">News and Updates</h1>
+              <div class="line">
+                <!-- line -->
+              </div>
+              <p class="mx-auto">Stay informed with the latest news, updates, and announcements. Get insights on new services, policy changes, and financial tips to help you make informed decisions.</p>
+            </div>
+          </div>
+          <div class="row f-carousel align-items-center text-center" id="myCarousel">
+            <div class="col-md-4 f-carousel__slide">
+              <div class="news-item news-read">
+                <div class="news-read-warpper">
+                  <img src="/assets/images/news/coming_soon2.jpeg" alt="">
+
+                </div>
+                <a href="" class="iconbox"><i class="ri-message-3-line"></i></a>
+
+              </div>
+            </div>
+            <div class="col-md-4 f-carousel__slide">
+              <div class="news-item news-read">
+                <div class="news-read-warpper">
+                  <img src="/assets/images/news/coming soon.jpeg" alt="">
+
+                </div>
+                <a href="" class="iconbox"><i class="ri-message-3-line"></i></a>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 text-center f-carousel__slide">
+              <div class="news-item news-read">
+                <div class="news-read-warpper">
+                  <img src="/assets/images/news/launch.jpeg" alt="">
+
+                </div>
+                <a href="" class="iconbox"><i class="ri-message-3-line"></i></a>
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- End news and updates section -->
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4">Testimonials</h1>
+              <div class="line">
+                <!-- line -->
+              </div>
+              <p class="mx-auto">Hear from our members about their experiences with Steve SACCO. Read real testimonials on how our savings, loans, and investment services have helped them achieve financial growth and stability. <br><br> Your feedback matters in shaping better financial solutions for everyone. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+  
   <script src="/assets/javascript/main.js"></script>
 </body>
 </html>
