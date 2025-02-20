@@ -97,8 +97,8 @@ img{
 
 }
 
-.navbar-nav .nav-link.active{
-  color: var(--c-brand);
+.navbar .nav-link.active{
+  color: var(--c-brand) !important;
 }
 
 .btn{
@@ -286,4 +286,55 @@ img{
 #contact .form-control:focus{
   box-shadow: none;
   border-color: var(--c-brand);
+}
+
+/* FOOTER */
+
+footer{
+  padding-top: 100px;
+  
+}
+
+footer li,
+footer p,
+footer a{
+  color: rgba(250,250,250,0.7)
+}
+
+footer ul{
+  list-style: none;
+  padding: 0;
+}
+
+footer .line{
+  width: 40px;
+  height: 4px;
+  background-color: var(--c-brand);
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.footer-top{
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(250,250,250,0.1);
+}
+
+.footer-bottom{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.social-icons a{
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100px;
+  color: black;
+}
+
+.social-icons a:hover{
+  background-color: var(--c-brand);
 }

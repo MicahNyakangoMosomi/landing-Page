@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simba Sacco</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <link
@@ -24,10 +25,10 @@
   href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
   rel="stylesheet"
 />
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="#">SIMBA SACCO</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,28 +37,30 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#About-us">About us</a>
+            <a class="nav-link " aria-current="page" href="#about-us">About us</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link " aria-current="page" href="#Membership">Membership</a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#Service">Service</a>
+            <a class="nav-link " aria-current="page" href="#service">Service</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#Loan">Loan Calculation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#Contact-us">Contact us</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="#news">News and updates</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Apply">Apply Now</a>
+            <a class="nav-link " aria-current="page" href="#reviews">testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#contact">Contact us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#Apply">Apply Now</a>
           </li>
           
           <li class="nav-item">
@@ -75,7 +78,7 @@
   <!-- End navbar -->
 
   <!-- hero -->
-  <section class="hero min-vh-100 d-flex align-items-center text-center">
+  <section class="hero min-vh-100 d-flex align-items-center text-center" id="home">
     <div class="container">
       <div class="row ">
         <div class="col-12">
@@ -382,7 +385,7 @@
     <!-- End news and updates section -->
 
     <!-- story section -->
-    <section class="section-padding" id="story">
+    <section class="section-padding" id="reviews">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -574,7 +577,78 @@
 
     </section>
     <!--End contacts -->
+
+    <!-- footer -->
+     <footer class="bg-dark">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-3 col-sm-6">
+              <h1 class="text-white">Simba SACCO</h1>
+              <div class="line"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non ratione perspiciatis, incidunt doloribus natus pariatur amet quos molestias, maxime similique optio mollitia ipsum, facere quis ea nemo minima aliquid?</p>
+              <div class="social-icons">
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                <a href=""><i class="ri-instagram-line"></i></a>
+                <a href=""><i class="ri-twitter-x-line"></i></a>
+                <a href=""><i class="ri-whatsapp-line"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h5 class="text-white">Service</h5>
+              <div class="line"></div>
+              <ul>
+                <li><a href="#">service1</a></li>
+                <li><a href="#">service2</a></li>
+                <li><a href="#">service3</a></li>
+                <li><a href="#">service4</a></li>
+              </ul>
+            </div>
+            
+            <div class="col-lg-3 col-sm-6">
+              <h5 class="text-white">About</h5>
+              <div class="line"></div>
+              <ul>
+                <li><a href="#">About1</a></li>
+                <li><a href="#">About2</a></li>
+                <li><a href="#">About3</a></li>
+                <li><a href="#">About4</a></li>
+              </ul>
+            </div>
+            
+            <div class="col-lg-3 col-sm-6">
+              <h5 class="text-white">Contact</h5>
+              <div class="line"></div>
+              <ul>
+                <li><a href="#">contact1</a></li>
+                <li><a href="#">contact2</a></li>
+                <li><a href="#">contact3</a></li>
+                <li><a href="#">contact4</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p class="mb-0">copyright Simba SACCO. All right Reserved</p>
+          </div>
+
+          <div class="col-auto">
+            <p class="mb-0">designed by <a href="#">Micah Mosomi</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+     </footer>
   
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
   
