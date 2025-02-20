@@ -10,7 +10,7 @@
   --c-brand-rgb:78,87,212;
   --c-body:#727272;
   --font-base: "Roboto", serif;
-  --box-shadow: 0px 15px 25px rgba(var(--c-brand-rgba),0.08);
+  --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
   --transition:all 0.5s ease;
 
 }
@@ -43,6 +43,9 @@ img{
 .section-padding{
   padding-top: 140px;
   padding-bottom: 140px;
+}
+.theme-shadow{
+  box-shadow: var(--box-shadow);
 }
 
 /* NAVBAR */
@@ -115,4 +118,40 @@ img{
   color: var(--c-brand);
   font-size: 34px;
   flex: none;
+}
+
+/* SERVICE */
+
+.service{
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.service::after{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(var(--c-brand-rgb,0.2));
+  bottom: 0;
+  right: 0;
+  transition: var(--transition);
+}
+
+.service:hover::after{
+  height: 100%;
+  width: 100%;
+  background-color: var(--c-brand);
+  z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p{
+  color: white;
+}
+
+.service:hover .iconbox{
+  background-color: rgba(255,255,255,0.2);
+  color: white;
 }
