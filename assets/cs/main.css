@@ -79,6 +79,11 @@ img{
   transform: scale(1.1);
 }
 
+.person-image-box{
+  width: 100px;
+  height: auto;
+}
+
 
 
 
@@ -229,4 +234,29 @@ img{
 .f-carousel__slide{
   box-shadow: var(--box-shadow);
   height: auto;
+}
+
+/* STORY */
+.story-header{
+  position: relative;
+}
+
+.story-header::after{
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -14px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.story small{
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--c-brand);
+}
+
+.story:hover .person-image-box img{
+  transform: scale(1.1);
 }
