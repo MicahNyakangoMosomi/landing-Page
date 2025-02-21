@@ -80,9 +80,6 @@ img{
   height: auto;
 }
 
-
-
-
 /* NAVBAR */
 .navbar{
   box-shadow: var(--box-shadow);
@@ -109,6 +106,7 @@ img{
 .btn-brand{
   background-color: var(--c-brand);
   color: white;
+  border: none;
 }
 
 .btn-brand:hover{
